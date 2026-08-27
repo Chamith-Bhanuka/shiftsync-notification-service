@@ -6,6 +6,9 @@ spring:
     name: notification-service
   config:
     import: "optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}"
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb+srv://cbhanukawp2002_db_user:SBLABJGXoRp6OIMA@shiftsync-notification.9pknogf.mongodb.net/shiftsync_notifications?retryWrites=true&w=majority&appName=shiftsync-notification}
 
 eureka:
   instance:
@@ -17,4 +20,4 @@ eureka:
 management:
   health:
     mongodb:
-      enabled: false
+      enabled: false
