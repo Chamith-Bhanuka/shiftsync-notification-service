@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 @Configuration
 public class MongoConfig {
 
-    @Value("${spring.data.mongodb.uri:mongodb+srv://cbhanukawp2002_db_user:SBLABJGXoRp6OIMA@shiftsync-notification.9pknogf.mongodb.net/shiftsync_notifications?retryWrites=true&w=majority&appName=shiftsync-notification}")
+    @Value("${spring.data.mongodb.uri:mongodb://localhost:27017/shiftsync_notifications}")
     private String mongoUri;
 
     @Bean
